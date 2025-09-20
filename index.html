@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Publicitario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con Logo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>PUBLI<span>DESING</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Contenido Publicitario (Izquierda) -->
+                <section class="advertising-content">
+                    <h2>Transforma tu Marca</h2>
+                    <p class="tagline">Diseño publicitario que marca la diferencia</p>
+                    
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diseño Gráfico Creativo" />
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <h3>Creatividad sin límites</h3>
+                            <p>Creamos campañas publicitarias únicas que capturan la esencia de tu marca y conectan con tu audiencia.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Resultados comprobados</h3>
+                            <p>Nuestros diseños han ayudado a más de 500 empresas a aumentar sus ventas en un promedio del 40%.</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Experiencia profesional</h3>
+                            <p>Más de 10 años creando identidades visuales que perduran en el tiempo y generan impacto real.</p>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button">¡Inicia tu proyecto hoy!</button>
+                </section>
+
+                <!-- Área de Video (Derecha) -->
+                <section class="video-section">
+                    <div class="video-container">
+                        <h3>Mira nuestro trabajo en acción</h3>
+                        <div class="video-frame">
+                            <!-- Opción 1: Video local -->
+                            <video width="100%" height="450" controls poster="https://www.youtube.com/shorts/wKuUtpHQ-2A?feature=share">
+                                <source src="video.mp4" type="video/mp4">
+                                <source src="video-diseno.webm" type="video/webm">
+                                <!-- Fallback para navegadores que no soportan video -->
+                                <div class="video-fallback">
+                                    <img src="https://www.youtube.com/shorts/wKuUtpHQ-2A?feature=share?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diseño Gráfico" style="width: 100%; border-radius: 15px;">
+                                    <div class="video-overlay">
+                                        <h4>🎨 Portafolio de Diseño</h4>
+                                        <p>Coloca tu video en la carpeta como "video-diseno.mp4"</p>
+                                    </div>
+                                </div>
+                            </video>
+                            
+                            <!-- Opción 2: Galería de imágenes animada (si no tienes video) -->
+                            <div class="image-gallery" style="display: none;">
+                                <div class="gallery-container">
+                                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diseño 1" class="gallery-image active">
+                                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diseño 2" class="gallery-image">
+                                    <img src="https://images.unsplash.com/photo-1609921212029-bb5a28e60960?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diseño 3" class="gallery-image">
+                                </div>
+                                <div class="gallery-controls">
+                                    <button class="gallery-btn prev">‹</button>
+                                    <button class="gallery-btn next">›</button>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="video-description">
+                            Descubre cómo transformamos ideas en campañas exitosas que impulsan el crecimiento de tu negocio.
+                        </p>
+                        <button class="toggle-btn" onclick="toggleVideoGallery()">📷 Alternar Vista</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 info@publidesing.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Publi Desing. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
